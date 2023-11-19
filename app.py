@@ -13,7 +13,7 @@ SCOPES = ['https://www.googleapis.com/auth/cloud-platform']
 
 # Load the credentials from the service account file
 credentials = service_account.Credentials.from_service_account_file(
-    'shift-405505-4f95ae6c6d88.json', scopes=SCOPES)
+    'dataset.json', scopes=SCOPES)
 
 # Create a requests Session object with the credentials
 authed_session = google.auth.transport.requests.AuthorizedSession(credentials)
