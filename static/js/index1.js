@@ -154,7 +154,9 @@ let databrowser = "";
 const request = async (prompt) => {
     const payload = {
         prompt: {
-            text: `${prompt}`
+            text: `"Vertex AI Vision, analyze ${prompt} and extract essential parameters for generating high-quality, full-size fashion images. Prioritize details relevant to dress generation, avoiding unrelated text. Provide the model with instructions to focus on quick and effective dress generation while maintaining image quality. The goal is to advise the user on what to wear based on the extracted parameters."
+
+`
         }
     };
     // Define the URL for the Google Cloud Language API
