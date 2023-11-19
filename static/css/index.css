@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+* {
+    font-family: 'Poppins';
+    user-select: none;
+    
+}
+
+body {
+    background-image: url(../assets/doodleinvert.png);
+    background-position: center;
+}
+
+::-webkit-scrollbar {
+    width: 0.01px;
+ }
+
+/* Glassmorphism card effect */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 500px;
+    min-width: 1080px;
+    overflow: scroll;
+    padding: 10px;
+    backdrop-filter: blur(6px) saturate(180%);
+    -webkit-backdrop-filter: blur(6px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.5);
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    margin-bottom: 70px;
+}
+
+.shift {
+    margin: 2% 0 0 0;
+    background-image: url(../assets/doodleinvert.png);
+    background-repeat: repeat;
+    color: transparent;
+    font-weight: bolder;
+    font-size: 100px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 0px 4px 10px rgba(5, 5, 5, 0.8);
+    z-index: 2;
+}
+
+.yfd {
+    font-family: 'Comic Neue', sans-serif;
+    margin: 0;
+    font-size: 30px ;
+}
+
+#getstarted {
+    text-decoration: none;
+    background-color: azure;
+    padding: 15px;
+    border-radius: 12px;
+    color: black;
+}
+
+#gallery {  
+    width: 350px;
+    height: 350px;
+}
+
+.bottom {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#loginForm, #registerForm {
+    margin: 40px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    backdrop-filter: blur(6px) saturate(180%);
+    -webkit-backdrop-filter: blur(6px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+input {
+    width: 20vw;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+input[type=submit] {
+    margin-top: 15px;
+    width: 10vw;
+}
+
+@media screen and (max-width: 1100px) {
+    .container {
+        min-height: 450px;
+        min-width: 800px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .container {
+        min-height: 340px;
+        min-width: 600px;
+    }
+    .top {
+        flex-direction: column;
+    }
+    .shift { 
+        font-size: 60px;
+    }
+    .yfd {
+        font-size: 20px;
+    }
+    #gallery {
+        margin-top: 30px; 
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        min-height: 170px;
+        min-width: 300px;
+    }
+    /* .shift { 
+        font-size: 60px;
+    }
+    .yfd {
+        font-size: 20px;
+    } */
+    .bottom {
+        flex-direction: column;
+    }
+    input {
+        width: 40vw;
+        padding: 12px;
+        border-radius: 12px;
+    }
+    #loginForm, #registerForm {
+        margin: 60px;
+    }
+    input[type=submit] {
+        width: 30vw;
+    }
+}

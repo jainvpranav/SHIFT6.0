@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='toast/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/typewriter.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+  <ul class="notifications"></ul>
+    <div class="container">
+      <div class="top">
+        <div class="left">
+          <h1 class="shift">SHIFT🪡</h1>
+          <!-- <a href="{{url_for('changePage')}}" style="background-color:orange;color:white;width:350px;margin-top:600px" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">GET IN</a> -->
+          <h3 class="yfd">Your Fashion Designer</h3>
+          <div class="css-typing">
+            <p>
+              Unleash your creativity and bring your dream wardrobe to life.
+            </p>
+            <p>
+              bring your dream wardrobe
+            </p>
+            <p>
+              to LIFE.
+            </p>
+          </div>
+          <br>
+          <a href="#forms" id="getstarted">Let's Design?</a>
+        </div>
+        <div class="right">
+          <img src="{{ url_for('static', filename='assets/doodle1.jpeg') }}" id="gallery"  alt="">
+        </div>
+      </div>
+      <div class="bottom" id="forms">
+        <form id="loginForm" autocomplete="off">
+          <h1>Login</h1>
+          <div>
+            <label for="luser">Email:</label><br>
+            <input type="email" id="luser" required><br>
+          </div>
+          <div>
+            <label for="lpass">Password:</label><br>
+            <input type="password" id="lpass" required><br>
+          </div>
+          <input type="submit" value="Submit" id="login">
+          <p>Not a user? <a style="color: azure;" href="#registerForm">Register</a></p>
+      </form>
+      <br>
+      <form id="registerForm" autocomplete="off">
+          <h1>Register</h1>
+          <div>
+            <label for="ruser">Email:</label><br>
+            <input type="email" id="ruser" required><br>
+          </div>
+          <div>
+            <label for="rpass">Password:</label><br>
+            <input type="password" id="rpass" required><br>
+          </div>
+          <input type="submit" value="Register" id="register">
+          <p>Already a user? <a style="color: azure;" href="#loginForm">Login</a></p>
+      </form>
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/59edc03056.js" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+.css-typing p {
+    border-right: .15em solid rgb(255, 255, 255);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bolder;
+    white-space: nowrap;
+    overflow: hidden;
+    /* color: whitesmoke; */
+  }
+  .css-typing p:nth-child(1) {
+    width: 14em;
+    opacity: 0;
+    -webkit-animation: type2 4s steps(40, end);
+    animation: type2 4s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  .css-typing p:nth-child(2) {
+    width: 15em;
+    opacity: 0;
+    -webkit-animation: type2 4s steps(40, end);
+    animation: type2 4s steps(40, end);
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  .css-typing p:nth-child(3) {
+    width: 4.5em;
+    opacity: 0;
+    -webkit-animation: type2 4s steps(40, end);
+    animation: type2 4s steps(40, end);
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid rgb(255, 255, 255);
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid rgb(255, 255, 255);
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid rgb(255, 255, 255);
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid rgb(255, 255, 255);
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      border-color: tranparent;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .css-typing p {
+      font-size: 14px;
+    }
+  }
